@@ -1,0 +1,188 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --yan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    background-color: var(--Cream);
+}
+
+
+/* =========================
+      |GENERAL STYLINGS|
+========================= */
+
+a{
+    text-decoration: none;
+    color: initial;
+}
+li{
+    list-style: none;
+}
+.section{
+    padding-inline: 5%;
+}
+button{
+    border: none;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.container{
+    min-width: 320px;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+/* =========================
+      |HEAD SECTION|
+========================= */
+.con-head{
+    padding-inline: 1em;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1.2rem;
+    background-color: var(--Soft-red);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Very-pale-orange);
+}
+.balance{
+    display: grid;
+    gap: .5rem;
+}
+.b-header{
+    font-size: 1.2rem;
+}
+.b-amount{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.chead-icon img{
+    width: 50px;
+}
+/* =========================
+      |BODY SECTION|
+========================= */
+.con-body{
+    background-color: var(--white);
+    padding-inline: clamp(2rem, 10vw, 2.2rem);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    border-radius: 1rem;
+}
+.st-header{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Dark-brown);
+}
+.expense-tab{
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: space-between;    
+}
+/* =========================
+      |BAR SECTION|
+========================= */
+.et-day{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    gap: 1rem;
+    position: relative;
+    font-size: 1.2rem;
+    color: var(--Medium-brown);
+}
+.bar-status{
+    position: absolute;
+    top: -3rem;
+    left: -.9rem;
+    background-color: var(--Dark-brown);
+    color: var(--Very-pale-orange);
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: .4rem;
+    display: none;
+    transition: .35s display ease-in-out;
+}
+.bar-stat-active{
+    display: block;
+}
+.et-bar{
+    position: relative;
+    width: 3rem;
+    background-color: var(--Soft-red);
+    height: .2rem;
+    border-radius: .3rem;
+}
+.current-bar{
+    background-color: var(--yan);
+}
+/* =========================
+      |TOTAL EXPENSES SECTION|
+========================= */
+.total-expense{
+    margin-top: 5rem;
+}
+.te-header, .time-of-expense{
+    color: var(--Medium-brown);
+}
+.te-percentage, .te-header{
+    font-size: 1.4rem; 
+}
+.te-grid{
+    margin-top: .5rem;
+}
+.te-grid{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.te-amount, .percent{
+    color: var(--Dark-brown);
+}
+.te-amount{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.te-percentage{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+.percent{
+    font-weight: 600;
+}
+
